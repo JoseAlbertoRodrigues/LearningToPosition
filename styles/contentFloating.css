@@ -1,0 +1,133 @@
+ /* ====  RESET ============================ */
+ @import url('https://fonts.googleapis.com/css2? family= Roboto:wght@100;300;400;500;700;900 & display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ p {
+     font-size: 1.5em;
+ }
+
+ ul, ol, li {
+     list-style: none;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ img {
+     width: 100%;
+     height: auto;
+ }
+
+ /* ====  VARIABLES ============================ */
+ :root {
+     --header-height: 8em;
+
+     /* colors */
+     --base-color: #D2872C; /*Orange*/
+     --base-color-second: #766F68; /*Gray*/
+     /* --base-color-tree: #d88116; Orange-black */
+     --base-color-tree: #ee8a0f; /*Orange-black*/
+
+     /* fonts */
+     --title-font-size: 3em;
+     --subtitle-font-size: 1em;
+     
+     --title-font: 'Roboto', sans-serif;
+ }
+
+ /* ====  BASE ============================ */
+ body {
+     font: 400 1em var(--title-font);
+     color: var(--base-color-second)
+ }
+
+ .title {
+     font: 700 var(--title-font-size) var(--base-color);
+     color: var(--base-color-second);
+ }
+
+ .button {
+     background: var(--base-color);
+     color: white;
+     display: inline-flex;
+     font: 700 1.7em var(--title-font);
+
+     padding: .8em 3.6em .8em 3.6em;
+     border-radius: .7em;
+     transition: background 0.3s;
+ }
+
+ .button:hover {
+     background: var(--base-color-tree);
+ }
+
+ /* ====  LAYOUT ============================ */
+ .container {
+     margin-left: 1.5em;
+     margin-right: 1.5em;
+     height: 110vh;
+ }
+
+ .grid {
+     display: grid;
+     gap: 2em;
+     /* grid-template-columns: 1fr 1fr; */
+ }
+
+ .section {
+     padding: calc(5em + var(--header-height)) 2em 0 2em;
+     width: 1250px;
+     margin: 0 auto;
+     height: 100%;
+ }
+
+ .section .title {
+     margin-bottom: 1em;
+ }
+
+ /* ====  HOME ============================ */
+ #home .container {
+     margin: 0;
+     position: relative;
+ }
+
+ #home .image {
+     min-width: 620px;
+     position: absolute;
+
+     width: 60%;
+     right: 0;
+
+     order: 0;
+ }
+
+ #home .text {
+     position: absolute;
+     top: -1.8em;
+     left: 0;
+     margin-left: 5em;
+     margin-right: 2em;
+     text-align: left;
+
+     order: 1;
+ }
+
+ #home .text h1 {
+     max-width: 8em;
+     font-size: 4.5em;
+     margin-bottom: .4em;
+ }
+ 
+ #home .text p {
+     width: 40vw;
+     font-size: 1.9em;
+     margin-bottom: 2em;
+     /* max: pega o maior valor entre os dois */
+     /* font-size: max(30.4px, 2vw); */
+ }
