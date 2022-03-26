@@ -50,6 +50,37 @@
             --title-font: 'Roboto', sans-serif;
         }
 
+        /* ====  BASE ============================ */
+        body {
+            font: 400 1em var(--title-font);
+            color: var(--base-color-second)
+        }
+
+        .title {
+            font: 700 var(--title-font-size) var(--base-color);
+            color: var(--base-color-second);
+        }
+
+        .container {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            height: 110vh;
+        }
+
+        .button {
+            background: var(--base-color);
+            color: white;
+            display: inline-flex;
+            font: 700 1.7em var(--title-font);
+
+            padding: .8em 3.6em .8em 3.6em;
+            border-radius: .7em;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: var(--base-color-tree);
+        }
 
 
     </style>
