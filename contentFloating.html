@@ -61,12 +61,6 @@
             color: var(--base-color-second);
         }
 
-        .container {
-            margin-left: 1.5em;
-            margin-right: 1.5em;
-            height: 110vh;
-        }
-
         .button {
             background: var(--base-color);
             color: white;
@@ -82,6 +76,28 @@
             background: var(--base-color-tree);
         }
 
+        /* ====  LAYOUT ============================ */
+        .container {
+            margin-left: 1.5em;
+            margin-right: 1.5em;
+            height: 110vh;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2em;
+        }
+
+        .section {
+            padding: calc(5em + var(--header-hight)) 2em 0 2em;
+            width: 1250px;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        .section .title {
+            margin-bottom: 1em;
+        }
 
     </style>
 
