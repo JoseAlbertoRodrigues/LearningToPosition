@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exemplo de como funciona a position: absolute</title>
+    
     <style>
         * {
             margin: 0;
@@ -32,26 +33,63 @@
         }
 
         .elementoExemplo_first {
+            position: absolute;
+            /* opacity: 0; */
+            right: 0;
             background: chocolate;
         }
 
         .elementoExemplo_second {
+            position: absolute;
+            bottom: 0;
             background: crimson;
         }
 
         .elementoExemplo_third {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            /* transform: translateX(-50%) translateY(-50%); */
+            transform: translate(-50%, -50%);
             background: rebeccapurple;
         }
 
         .elementoExemplo_fourth {
+            position: absolute;
+            left: 0;
+            background: slategray;
+        }
+
+        .elementoExemplo_fifth {
+            position: absolute;
+            right: 0;
+            bottom: 0;
             background: black;
         }
 
         .elementoExemplo_interno_third {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
             background: saddlebrown;
         }
 
+        /* fiz alinhando pela direita apenas para testar como seria, mas se começar de um jeito termine do mesmo jeito.
+        para não correr o risco de se confundir. tipo alinhei todos os outros pelo left. */
         .elementoExemplo_interno_fifth {
+            position: absolute;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
+
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
             background: purple;
         }
     </style>
