@@ -22,7 +22,7 @@
             list-style: none;
         }
 
-        .elementoExemplo {
+        .elementExample {
             width: 200px;
             height: 200px;
             line-height: 200px;
@@ -32,20 +32,20 @@
             cursor: pointer;
         }
 
-        .elementoExemplo_first {
+        .elementExample_first {
             position: absolute;
             /* opacity: 0; */
             right: 0;
             background: chocolate;
         }
 
-        .elementoExemplo_second {
+        .elementExample_second {
             position: absolute;
             bottom: 0;
             background: crimson;
         }
 
-        .elementoExemplo_third {
+        .elementExample_third {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -54,20 +54,20 @@
             background: rebeccapurple;
         }
 
-        .elementoExemplo_fourth {
+        .elementExample_fourth {
             position: absolute;
             left: 0;
             background: slategray;
         }
 
-        .elementoExemplo_fifth {
+        .elementExample_fifth {
             position: absolute;
             right: 0;
             bottom: 0;
             background: black;
         }
 
-        .elementoExemplo_interno_third {
+        .elementExample_internal_third {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -81,7 +81,7 @@
 
         /* fiz alinhando pela direita apenas para testar como seria, mas se começar de um jeito termine do mesmo jeito.
         para não correr o risco de se confundir. tipo alinhei todos os outros pelo left. */
-        .elementoExemplo_interno_fifth {
+        .elementExample_internal_fifth {
             position: absolute;
             right: 50%;
             bottom: 50%;
@@ -96,33 +96,35 @@
 </head>
 <body>
     <!-- First Div -->
-    <div class="elementoExemplo elementoExemplo_first">
+    <div class="elementExample elementExample_first">
         Primeira Div
     </div>
     
     <!-- Second Div -->
-    <div class="elementoExemplo elementoExemplo_second">
+    <div class="elementExample elementExample_second">
         Segunda Div
     </div>
 
     <!-- Third Div -->
-    <div class="elementoExemplo elementoExemplo_third">
+    <div class="elementExample elementExample_third">
         <!-- Third Div Internal -->
-        <div class="elementoExemplo_interno_third">
+        <div class="elementExample_internal_third">
             Interna
         </div>
     </div>
 
     <!-- Fourth Div -->
-    <div class="elementoExemplo elementoExemplo_fourth">
+    <div class="elementExample elementExample_fourth">
         Quarta Div
     </div>
 
     <!-- fifth Div -->
-    <div class="elementoExemplo elementoExemplo_fifth">
-        <div class="elementoExemplo_interno_fifth">
+    <div class="elementExample elementExample_fifth">
+        <div class="elementExample_internal_fifth">
             Interna
         </div>
     </div>
+
+    <!-- <p>Isso está acontecendo porque toda vez que utilizamos a propriedade position com o valor absolute, esse valor cria de imediato um novo contexto para a div e este contexto fica a frente do contexto do browser, além disso, é liberado o espaço que a primeira div ocupava no contexto do browser. Por causa desse último comportamento do absolute que não estamos conseguindo ver a nossa segunda div, portanto podemos concluir que a segunda div está abaixo da nossa primeira div. Para vermos se isso é verdade, vamos voltar para o nosso arquivo position.css e adicionar em nossa primeira div a propriedade opacity com o valor 0 que deixará ela totalmente transparente.</p> -->
 </body>
 </html>
