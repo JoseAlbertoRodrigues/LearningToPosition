@@ -296,7 +296,7 @@ nav.show div.icon-close {
 #home .text {
     margin-left: 1.5em;
     margin-right: 1.5em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #home .text h1 {
@@ -321,4 +321,55 @@ nav.show div.icon-close {
 #about .text {
     margin-left: 1.5em;
     margin-right: 1.5em;
+}
+
+#about .text p {
+    margin-bottom: 2em;
+    max-width: 100%;
+}
+
+/* =====  Characteristics  =================================== */
+#characteristics {
+    background-color: blueviolet;
+}
+
+#characteristics .container {
+    margin: 0 2em;
+    background-color: rgba(209, 207, 207, 0.849);
+}
+
+#characteristics .image img,
+#characteristics .image::before {
+    padding: 1em 2em 4em;
+    /* border-radius: 2em; */
+}
+
+#characteristics .text {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#characteristics .text p {
+    margin-bottom: 2em;
+    max-width: 100%;
+}
+
+/* ===== Contact =================================== */
+#contact .container {
+    margin: 0;
+}
+
+#contact .image img,
+#contact .image::before {
+    border-radius: 0.25em;
+}
+
+#contact .text {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#contact .text p {
+    margin-bottom: 2em;
+    max-width: 100%;
 }
