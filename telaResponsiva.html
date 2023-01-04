@@ -13,14 +13,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-        body {
-            background-color: rgba(255, 99, 71, 0.445);
-        }
-        
-        p {
-            font-family: ;
-            font-size: 1.2rem;
-        }
 
         ul {
             list-style: none;
@@ -40,14 +32,19 @@
             scroll-behavior: smooth;
         }
 
-        main {
-            max-width: 1000px;
-            margin: auto;
+        body {
+            background-color: rgba(255, 99, 71, 0.445);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        p {
+            /*font-family: ;*/
+            font-size: 1.2rem;
         }
 
         /*===  Layout ============================ */
         .container {
-            width: 100vw;
+            height: auto;
         }
 
         .grid {
@@ -56,19 +53,78 @@
         }
 
         .section {
-            display: flex;
-            height: auto;
+            padding: 2rem;
         }
 
         .section .title {
             margin-bottom: 1rem;
         }
 
-        /* ================= bola andando ======================= */
+        #header {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid #e4e4e4;
+            background-color: rgba(21, 172, 241, 0.555);
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* -------------------- LOGO ------------------------  */
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            font-family: cursive;
+            color: rgb(247, 123, 8);
+        }
+        .logo span {
+            color: black;
+        }
+
+        /* Navigation --------------------------*/
+        nav {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* ================= bola andando ======================= 
+        #circle-kik {   
+            display: grid;
+            grid-template-areas:
+            "circle"
+            "header";
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #circle-kik #circle {
+            grid-area: circle;
+        }
+
+        #circle-kik #header {
+            background-color: black;
+            width: 80%;
+            grid-area: header;
+            display: flex;
+            text-align: center;
+        }
+
+        #circle-kik #header nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #circle-kik #header nav .menu ul {
+            display: flex;
+            text-align: center;
+        }
+
+        ----------------------------------- 
         #circle-kik {
             background-color: rgba(255, 0, 255, 0.281);
             align-items: center;
-            height: 50vh;
+            height: 50%;
             box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
             margin-bottom: 1rem;
         }
@@ -89,7 +145,8 @@
                 transform: translateX(0);
             }
         }
-        
+        */
+
         /* ================= home ======================= */
         #home {
             padding: 2rem;
@@ -158,11 +215,50 @@
 </head>
 <body>
     
-    <section class="section" id="circle-kik">
-        <div class="container grid">
+    <header id="header">
+        <nav class="container">
+            <a href="#" class="logo">Play<span>Academy</span></a>
+
+            <!-- menu -->
+            <div class="menu">
+                <ul class="grid">
+                    <li class="title"><a href="#home">Home</a></li>
+                    <li class="title"><a href="#animais">Animais</a></li>
+                    <li class="title"><a href="#gatos">Gatos</a></li>
+                    <li class="title"><a href="#conteudo">Conteúdo</a></li>
+                    <li class="title"><a href="#">Mais</a></li>
+                </ul>
+            </div>
+            <!-- menu toggle -->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div>
+        </nav>
+    </header>
+
+    <!-- <section class="section" id="circle-kik">
+        <div class="container grid" id="circle">
             <div class="circle"></div>
-        </div>
-    </section>
+        </div> 
+        <header id="header">
+            <nav class="container">
+                <a href="#" class="logo">Play<span>Academy</span></a>
+
+                 menu
+                <div class="menu">
+                    <ul class="grid">
+                        <li class="title"><a href="#home">Home</a></li>
+                        <li class="title"><a href="#animais">Animais</a></li>
+                        <li class="title"><a href="#gatos">Gatos</a></li>
+                        <li class="title"><a href="#conteudo">Conteúdo</a></li>
+                        <li class="title"><a href="#">Mais</a></li>
+                    </ul>
+                </div>
+                 menu toggle
+                <div class="toggle icon-menu"></div>
+                <div class="toggle icon-close"></div>
+            </nav>
+        </header>
+    </section> -->
     <main>
         <section class="section" id="home">
             <div class="container grid">
