@@ -7,66 +7,208 @@
     <title>Tela Responsiva</title>
 
     <style>
+        /*====  RESET ============================ */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        section.home {
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /*===  BASE ============================ */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /*===  Layout ============================ */
+        .container {
+            width: 100vw;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .section {
             display: flex;
+            height: auto;
+        }
+
+        .section .title {
+            margin-bottom: 1rem;
+        }
+
+        /* ================= bola andando ======================= */
+        #circle-kik {
+            background-color: rgba(255, 0, 255, 0.281);
+            align-items: center;
+            height: 50vh;
+        }
+
+        #circle-kik .circle {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            animation: go-back 4s infinite alternate;
+        }
+
+        @keyframes go-back {
+            from {
+                transform: translateX(76vw);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        /* ================= home ======================= */
+        #home {
             padding: 2rem;
             background-color: tomato;
-            height: 100vh;
         }
 
-        section.animais {
-            display: flex;
+        #home .text {
+            background-color: rgba(255, 20, 145, 0.863);
+            text-indent: 1.5rem;
+            padding: 1rem;
+            border-radius: 2rem;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+        }
+
+        #home p {
+            margin-bottom: 2rem;
+        }
+
+        /* ================= animais ======================= */
+
+        #animais {
             padding: 2rem;
             background-color: crimson;
-            height: 100vh;
         }
 
-        section.gatos {
-            display: flex;
+        #animais .text {
+            background-color: rgba(161, 161, 190, 0.897);
+            text-indent: 1.5rem;
+            padding: 1rem;
+            border-radius: 1.5rem 3rem;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+        }
+
+        #animais .image img {
+            border-radius: 50px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+        }
+
+        #animais p {
+            margin-bottom: 2rem;
+        }
+
+        /* ================= animais ======================= */
+        #gatos {
             padding: 2rem;
             background-color: coral;
-            height: 100vh;
+        }
+
+        #gatos .text {
+            background-color: rgba(161, 161, 190, 0.897);
+            text-indent: 1.5rem;
+            padding: 1rem;
+            border-radius: 1.5rem 3rem;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+        }
+
+        #gatos .image img {
+            border-radius: 50px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+        }
+
+        #gatos p {
+            margin-bottom: 2rem;
         }
     </style>
 </head>
 <body>
-    <section class="home">
-        <div class="title">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
-            </p>
+    <section class="section" id="circle-kik">
+        <div class="container grid">
+            <div class="circle"></div>
         </div>
     </section>
 
-    <section class="animais">
-        <div class="title">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
-            </p>
+    <section class="section" id="home">
+        <div class="container grid">
+            <div class="text">
+                <h2 class="title">The history of the hebrews</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+            </div>
         </div>
     </section>
 
-    <section class="gatos">
-        <div class="title">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
-            </p>
+    <section class="section" id="animais">
+        <div class="container grid">
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+            </div>
+            <div class="image">
+                <img src="./assets/image/balao.jpg" alt="balão">
+            </div>
+            <div class="text">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+            </div>
         </div>
+    </section>
+
+    <section class="section" id="gatos">
+        <div class="container grid">
+            <div class="title">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti officia pariatur excepturi, optio veritatis tempora quod, odio quibusdam earum perspiciatis, qui officiis ex quaerat veniam sequi magni numquam explicabo ipsum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis officia asperiores ipsa laborum itaque facilis neque ullam enim impedit, est quas velit at praesentium dolorum nobis rem dicta mollitia eligendi?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="conteudo">
     </section>
 
 
